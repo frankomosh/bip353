@@ -2,5 +2,24 @@
 name = "bip353"
 version = "0.1.0"
 edition = "2021"
+description = "Minimal implementation of BIP-353 DNS Payment Instructions for HWI and core"
 
 [dependencies]
+trust-dns-resolver = { version = "0.22", features = ["dnssec"] }
+trust-dns-proto = { version = "0.22", features = ["dnssec"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+thiserror = "1.0"
+
+[features]
+default = []
+python = ["pyo3"]
+ffi = []
+
+[dependencies.pyo3]
+version = "0.19"
+features = ["extension-module"]
+optional = true
+
+[lib]
+name = "bip353"
+crate-type = ["cdylib", "rlib"]
