@@ -6,7 +6,7 @@
 
 use bip353::{PaymentInstruction, PaymentType, Bip353Error};
 
-#[test]
+#[test] 
 fn test_onchain_addresses() {
     // Basic on-chain address
     let uri = "bitcoin:bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4";

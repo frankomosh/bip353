@@ -36,6 +36,8 @@ cargo build --release --features python
 The test suite is organized into three main components:
 
 1. **Address Parsing Tests**: Tests for correctly parsing human-readable Bitcoin addresses.
+2. **URI Parsing Tests**: Tests for parsing different types of Bitcoin payment URIs
+
 
 ### Running Tests
 
