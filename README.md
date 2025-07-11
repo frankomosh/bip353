@@ -1,7 +1,7 @@
 # BIP-353: DNS Payment Instructions
 
 ## Overview
-This repository is an experimental Rust implementation of BIP-353 for DNS-based Bitcoin payment instructions, proposal by Matt Corrallo and Bastien Teinturier(https://github.com/bitcoin/bips/blob/master/bip-0353.mediawiki). The proof of concept (POC) encodes Bitcoin payment instructions in DNSSEC-signed DNS TXT records, allowing for human-readable Bitcoin addresses. For example, a human-readable address like `₿alice@example.com` securely resolves to any type of Bitcoin payment instruction: on-chain addresses, Lightning invoices, or Lightning offers.
+This repository is an experimental Rust implementation of BIP-353 for DNS-based Bitcoin payment instruction. Based on proposal by Matt Corrallo and Bastien Teinturier(https://github.com/bitcoin/bips/blob/master/bip-0353.mediawiki). The proof of concept (POC) encodes Bitcoin payment instructions in DNSSEC-signed DNS TXT records, allowing for human-readable Bitcoin addresses. For example, a human-readable address like `₿alice@example.com` securely resolves to any type of Bitcoin payment instruction: on-chain addresses, Lightning invoices, or Lightning offers.
 
 ### Goals
 The goal of this project is to make Bitcoin payments significantly more user-friendly while maintaining strong security guarantees through DNSSEC and avoiding privacy pitfalls of other approaches.
